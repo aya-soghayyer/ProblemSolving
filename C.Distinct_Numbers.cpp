@@ -1,4 +1,6 @@
-//*** B. Karen and Coffee
+//*** C - Distinct Numbers
+
+// A - You're Given a String...
 
 #include <bits/stdc++.h>
 #define FAST ios_base::sync_with_stdio(0), cin.tie(0), cout.tie(0);
@@ -8,7 +10,15 @@ using namespace std;
 
 void start()
 {
-  
+   int n; 
+   set<int>s; 
+   cin >> n; 
+   for (int i = 0; i < n; i++){
+    int val; 
+    cin >> val; 
+    s.insert(val); 
+   }
+   cout << s.size() << endl;
 }
 
 signed main()
@@ -19,6 +29,5 @@ signed main()
     // {
     start();
     // }
-
     return 0;
 }
